@@ -1,12 +1,12 @@
 %% compareSTLvolume.m
-% -------------------------------------------------------------------------
-% Name: Tomić Nicolas
-% Date: 2025-03-24
-%
 % Description:
 %   This script compares two high-resolution STL surface meshes ("pre" and 
 %   "post" exposure) to compute the net volume change due to material swelling
-%   and ablation. The workflow is as follows:
+%   and ablation. 
+% Name: Tomić Nicolas
+% Date: 2025-03-24
+%
+% The workflow is as follows:
 %     1. Load STL files and (optionally) recenter them using reference points.
 %     2. Launch a manual alignment GUI (for XYZ translation, Z rotation, and 
 %        optional centering via new buttons).
