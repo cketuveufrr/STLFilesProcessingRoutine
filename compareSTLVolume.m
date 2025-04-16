@@ -1,12 +1,23 @@
 %% compareSTLvolume.m
-% Description:
 %   This script compares two high-resolution STL surface meshes ("pre" and 
 %   "post" exposure) to compute the net volume change due to material swelling
-%   and ablation. 
-% Name: Tomić Nicolas
+%   and ablation.
+%
+% Author: Nicolas Tomić
 % Date: 2025-03-24
 %
-% The workflow is as follows:
+% Repository:
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
+%
+% Citation:
+%   If you use this script or any part of the STLFilesProcessingRoutine toolbox 
+%   in your research or project, please cite it as:
+%
+%   Nicolas Tomić. "STLFilesProcessingRoutine – A MATLAB toolbox for STL-based 
+%   volume comparison and processing." GitHub, 2025. 
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
+%
+% Workflow Summary:
 %     1. Load STL files and (optionally) recenter them using reference points.
 %     2. Launch a manual alignment GUI (for XYZ translation, Z rotation, and 
 %        optional centering via new buttons).

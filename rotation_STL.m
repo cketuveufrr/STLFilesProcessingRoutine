@@ -1,8 +1,19 @@
 %% rotation_STL.m
 % This script rotates an STL mesh in two stages and translates it to sit on the XY plane.
 %
-% Built by: Tomić Nicolas
-% Date: 31-01-2025
+% Built by: Nicolas Tomić
+% Date: 2025-01-31
+%
+% Repository:
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
+%
+% Citation:
+%   If you use this script or any part of the STLFilesProcessingRoutine toolbox 
+%   in your research or project, please cite it as:
+%
+%   Nicolas Tomić. "STLFilesProcessingRoutine – A MATLAB toolbox for STL-based 
+%   volume comparison and processing." GitHub, 2025. 
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
 %
 % Stage 1: Align a plane (defined by 3 user-selected points) with the XY plane.
 %          (That is, rotate so that the plane’s normal becomes [0 0 1].)
@@ -15,6 +26,7 @@
 % The overall rotation and translation process ensures the mesh is properly positioned.
 %
 % Requirements: stlread (returns a triangulation object)
+% -------------------------------------------------------------------------
 
 clear all; close all; clc
 

@@ -2,8 +2,19 @@
 % This script processes two rotated STL models (Pre and Post samples) 
 % independently and then superposes their cross‐sections.
 %
-% Built by: Tomić Nicolas
-% Date: 06-02-2025
+% Built by: Nicolas Tomić
+% Date: 2025-02-06
+%
+% Repository:
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
+%
+% Citation:
+%   If you use this script or any part of the STLFilesProcessingRoutine toolbox 
+%   in your research or project, please cite it as:
+%
+%   Nicolas Tomić. "STLFilesProcessingRoutine – A MATLAB toolbox for STL-based 
+%   volume comparison and processing." GitHub, 2025. 
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
 %
 % Description:
 % 1. For each model:
@@ -25,6 +36,7 @@
 % 4. The measurement lines and intersection points are plotted and saved.
 %
 % Requirements: stlread (which returns a triangulation object)
+% -------------------------------------------------------------------------
 
 clear all; close all; clc
 

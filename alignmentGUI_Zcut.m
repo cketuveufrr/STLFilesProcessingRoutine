@@ -1,13 +1,22 @@
 function finalTransform2 = alignmentGUI_Zcut(TR_before, TR_after, initialBeforePoints, initialAfterPoints)
-% alignmentGUI_Zcut
-% --------------
-%
-% Name: Tomić Nicolas
-% Date: 2025-03-24
-%
+%% alignmentGUI_Zcut
 % This GUI allows manual fine-tune alignment of two meshes (PRE and POST)
 % using translation and Z rotation. It also includes options to align and
 % center each mesh based on a selected reference (a point under a hole).
+%
+% Author: Nicolas Tomić
+% Date: 2025-03-24
+%
+% Repository:
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
+%
+% Citation:
+%   If you use this script or any part of the STLFilesProcessingRoutine toolbox 
+%   in your research or project, please cite it as:
+%
+%   Nicolas Tomić. "STLFilesProcessingRoutine – A MATLAB toolbox for STL-based 
+%   volume comparison and processing." GitHub, 2025. 
+%   https://github.com/LeCodeurSombre/STLFilesProcessingRoutine
 %
 % The function returns a structure finalTransform2 with three fields:
 %   - transformBefore: A structure with fields Tx, Ty, Tz, and Rz (degrees)
@@ -35,6 +44,7 @@ function finalTransform2 = alignmentGUI_Zcut(TR_before, TR_after, initialBeforeP
 %
 % Output:
 %   finalTransform2: Structure with fields transformBefore, transformAfter, and Zcut.
+% -------------------------------------------------------------------------
 
 %% Initialize Figure and Axes
 fig = figure('Name', 'Manual Fine-Tune Alignment', 'Position', [100, 100, 1000, 600]);
